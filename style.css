@@ -22,7 +22,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-dark);
-  background-color: orange;
+  background-color: var(--bg-light);
   line-height: 1.6;
 }
 

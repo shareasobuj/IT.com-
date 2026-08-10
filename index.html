@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT.com - Leading Tech Solutions</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">IT<span>.com</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">হোম</a>
+        <a href="#services">সার্ভিসসমূহ</a>
+        <a href="#portfolio">পোর্টফোলিও</a>
+        <a href="#testimonials">মতামত</a>
+        <a href="#contact" class="btn-primary">যোগাযোগ</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>ডিজিটাল ভবিষ্যৎ গড়ার নির্ভরযোগ্য প্রতিষ্ঠান <span>IT.com</span></h1>
+        <p>আমরা আপনার ব্যবসাকে আধুনিক প্রযুক্তি, ওয়েভ ও অ্যাপ ডেভেলপমেন্টের মাধ্যমে পরবর্তী লেভেলে নিয়ে যেতে প্রতিশ্রুতিবদ্ধ।</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">কাজ শুরু করুন</a>
+          <a href="#services" class="btn-secondary">সার্ভিসসমূহ দেখুন</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="glow-effect"></div>
+        <i class="fas fa-laptop-code hero-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">আমাদের <span>সেবাসমূহ</span></h2>
+      <p class="section-subtitle">আমরা যেসকল প্রফেশনাল সার্ভিস প্রদান করে থাকি</p>
+      
+      <div class="services-grid" id="servicesGrid">
+        <!-- Dynamic Content via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">আমাদের <span>প্রজেক্টসমূহ</span></h2>
+      
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">সবগুলো</button>
+        <button class="filter-btn" data-filter="web">ওয়েবসাইট</button>
+        <button class="filter-btn" data-filter="app">মোবাইল অ্যাপ</button>
+        <button class="filter-btn" data-filter="ui">UI/UX ডিজাইন</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Dynamic Content via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">ক্লায়েন্টদের <span>মতামত</span></h2>
+      
+      <div class="slider-container">
+        <div class="testimonial-card" id="testimonialCard">
+          <!-- Dynamic Content via JS -->
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">আমাদের সাথে <span>যোগাযোগ করুন</span></h2>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>কথা বলুন আমাদের সাথে</h3>
+          <p>আপনার যেকোনো প্রশ্ন বা প্রজেক্ট আইডিয়া নিয়ে আমাদের মেসেজ দিন।</p>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>support@it.com</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+880 1700-000000</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>ঢাকা, বাংলাদেশ</span>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="input-group">
+            <input type="text" id="name" required placeholder="আপনার নাম">
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" required placeholder="আপনার ইমেইল">
+          </div>
+          <div class="input-group">
+            <textarea id="message" rows="5" required placeholder="আপনার বার্তা..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">পাঠিয়ে দিন</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 IT.com — সর্বস্বত্ব সংরক্ষিত।</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
